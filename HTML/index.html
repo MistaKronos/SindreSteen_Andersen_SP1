@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reception Management Dashboard</title>
     <link rel="stylesheet" href="/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="/CSS/bootstrap.css.map">
     <link rel="stylesheet" href="/CSS/brandrepresentation.css">
 </head>
 <body>
+    <header class="p-3 mb-3 border-bottom text-center">
+        <h1>Reception Management Dashboard</h1>
+    </header>
+    <div class="container my-5 centre text-center">
+        <h2 class="mb-3">Staff</h2>
     <div class="table-responsive">
         <table class="table table-striped">
           <thead>
@@ -27,9 +32,9 @@
           <tbody>
             <tr>
               <td><img src="person1.jpg" alt="Person 1"></td>
-              <td>John</td>
-              <td>Doe</td>
-              <td>johndoe@example.com</td>
+              <td>Noenavn</td>
+              <td>her</td>
+              <td>navn@example.com</td>
               <td>In</td>
               <td>-</td>
               <td>-</td>
@@ -37,9 +42,9 @@
             </tr>
             <tr>
               <td><img src="person2.jpg" alt="Person 2"></td>
-              <td>Jane</td>
-              <td>Smith</td>
-              <td>janesmith@example.com</td>
+              <td>Lise</td>
+              <td>Etternavn</td>
+              <td>lise@example.com</td>
               <td>Out</td>
               <td>11:30 AM</td>
               <td>30 minutes</td>
@@ -48,8 +53,8 @@
             <tr>
               <td><img src="person3.jpg" alt="Person 3"></td>
               <td>Bob</td>
-              <td>Johnson</td>
-              <td>bjohnson@example.com</td>
+              <td>Kåre</td>
+              <td>bobkåre@example.com</td>
               <td>In</td>
               <td>-</td>
               <td>-</td>
@@ -58,8 +63,8 @@
             <tr>
               <td><img src="person4.jpg" alt="Person 4"></td>
               <td>Bob</td>
-              <td>Johnson</td>
-              <td>bjohnson@example.com</td>
+              <td>Stein</td>
+              <td>email@example.com</td>
               <td>In</td>
               <td>-</td>
               <td>-</td>
@@ -67,9 +72,9 @@
             </tr>
             <tr>
               <td><img src="person5.jpg" alt="Person 5"></td>
-              <td>Bob</td>
-              <td>Johnson</td>
-              <td>bjohnson@example.com</td>
+              <td>Pål</td>
+              <td>Johnsen</td>
+              <td>påljohns1@example.com</td>
               <td>In</td>
               <td>-</td>
               <td>-</td>
@@ -80,6 +85,10 @@
       </div>
       <div class="clock">
         <h1 id="clock"></h1>
+      </div>
+      <div class="d-flex justify-content-between">
+        <button class="btn btn-danger">Out</button>
+        <button class="btn btn-success">In</button>
       </div>
 
 

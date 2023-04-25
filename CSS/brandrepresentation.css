@@ -1,3 +1,7 @@
+table, th, td {
+    border: 1px solid black;
+  }
+
 th {
     color: white;
     border: 1px solid black;
@@ -12,19 +16,4 @@ th {
     position: fixed;
     bottom: 0;
     right: 0;
-}
-
-.status-button {
-    cursor: pointer;
-    padding: .25rem .5rem;
-}
-.in-button {
-    background-color: #28a745;
-    border-color: #28a745;
-    color: #fff;
-}
-.out-button {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    color: #fff;
-}
+  }
