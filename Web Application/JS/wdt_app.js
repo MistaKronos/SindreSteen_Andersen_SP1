@@ -131,8 +131,10 @@ function staffUserGet() {
 }
 
 // Call the function so the page is populated with staff members
+$(document).ready(function () {
+  staffUserGet();
+});
 
-staffUserGet();
 
 const outBtn = document.getElementById("outBtn");
 const inBtn = document.getElementById("inBtn");
