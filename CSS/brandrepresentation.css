@@ -1,19 +1,121 @@
-table, th, td {
-    border: 1px solid black;
-  }
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  min-width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
 
 th {
-    color: white;
-    border: 1px solid black;
-    padding: 5px;
-  }
+  border-bottom: 1px;
+}
 
-  thead {
-    background-color: rgb(33, 33, 152);
-  }
+thead {
+  background-color: #0E8EA8;
+  color: #fff;
+  font-family: Consolas;
+}
 
-  .clock {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-  }
+tbody {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #83D1E1;
+  color: #212529;
+}
+
+.clock {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+tr:hover
+ {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
+}
+
+.selectedDriver {
+  background-color: #0E8EA8;
+
+}
+
+.selectedStaff {
+  background-color: #0E8EA8;
+}
+
+#outBtn,
+#clearBtn {
+  background-color: #DC3545;
+}
+
+#inBtn,
+#addBtn {
+  background-color: #198754;
+}
+
+#inBtn,
+#outBtn,
+#addBtn,
+#clearBtn {
+  font-family: Consolas;
+  color: #fff;
+}
+
+#inBtn:hover,
+#outBtn:hover,
+#addBtn:hover,
+#clearBtn:hover {
+  width: 100px;
+  box-shadow: #212529 0 0 10px 5px
+}
+
+
+.nav {
+  font-family: Consolas;
+}
+
+.dropdown-menu {
+  background-color: #83D1E1;
+  opacity: 0.9;
+}
+
+.dropdown-item {
+  color: #212529;
+}
+
+.nav-link {
+  background-color: #0e8ea8;
+  color: #fff;
+}
+
+.background {
+  background-color: #0e8ea8;
+}
+
+h1, h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #212529;
+}
+
+#static-image {
+  position: absolute;
+  top: 25px;
+  left: 75px;
+  max-width: 250px; /* You can adjust this value to resize the image */
+  z-index: -5;
+}
+
