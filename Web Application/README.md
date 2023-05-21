@@ -5,8 +5,8 @@ Semester Project - Receptionist program
 This web application keeps track of staff members and their absence, and also supports a delivery scheduling system that allows users to add, view, and delete scheduled deliveries. It's built using HTML, CSS, JavaScript/jQuery, and Bootstrap.
 
 index.html: The main HTML file that contains the structure of the web application.
-css/style.css: The custom CSS styles for the web application.
-js/main.js: The JavaScript file containing the logic and functionality of the web application.
+css/brandrepresentation.css: The custom CSS styles for the web application.
+js/wdt_app.js: The JavaScript file containing the logic and functionality of the web application.
 img/: This folder contains any images used in the application.
 README.md: The file you're currently reading.
 
