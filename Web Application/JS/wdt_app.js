@@ -441,7 +441,7 @@ function handleClockIn(staffEmail) {
     staffMember.outTime = "-";
     staffMember.duration = "-";
     staffMember.expectedReturnTime = "-";
-    staffMember.lastClockInTime = new Date(); // Add this line to keep track of the last clock-in time
+    staffMember.lastClockInTime = new Date();
     updateTable();
     delete shownToasts[staffEmail]; // Remove the toast from shownToasts object when staff member clocks in
     delete dismissedToasts[staffEmail]; // After updating the clock in time, delete the entry from the dismissedToasts
@@ -462,8 +462,8 @@ function staffMemberIsLate() {
   });
 }
 
-// Start the interval to call staffMemberIsLate every 7.5 seconds
-const staffIsLateInterval = setInterval(staffMemberIsLate, 7500);
+// Start the interval to call staffMemberIsLate every 30 seconds
+const staffIsLateInterval = setInterval(staffMemberIsLate, 30000);
 
 // Get the toast element
 const toastElement = document.getElementById("staffIsLate");
@@ -560,8 +560,8 @@ function driverIsLate() {
   });
 }
 
-// Start the interval to call driverIsLate every 1 minute
-const driverIsLateInterval = setInterval(driverIsLate, 60000); // 60000 ms (1 minute)
+// Start the interval to call driverIsLate every 30 seconds
+const driverIsLateInterval = setInterval(driverIsLate, 30000); // 30000 ms
 
 // Driver dismiss button event listener
 const driverDismissBtn = driverToastElement.querySelector("#driverDismissBtn");
